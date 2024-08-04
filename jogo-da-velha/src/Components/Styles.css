@@ -1,0 +1,21 @@
+.sobre{
+    color:#707070;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
+}
+.bloco{
+    background-color: rgb(112, 95, 95);
+    text-align: right;
+    left: 35%;
+    top: 30%;
+    right: 50%;
+    bottom: 45%;
+    position: absolute;
+    width: 25em;
+    height: 25em;
+    border-radius: 10px;
+    margin: -25px 0 0 -25px
+}
