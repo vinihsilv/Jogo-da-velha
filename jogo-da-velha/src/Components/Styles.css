@@ -1,14 +1,14 @@
 .sobre{
-    color:#707070;
+    color:black;
     text-align: center;
-    font-size: 14px;
+    font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     
 }
 .bloco{
-    background-color: rgb(112, 95, 95);
-    text-align: right;
+    background-color: #14bdac;
+    text-align: center;
     left: 35%;
     top: 30%;
     right: 50%;
