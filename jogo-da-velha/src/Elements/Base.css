@@ -1,0 +1,11 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-secundary);
+}
+h1{
+    font-size: 22px;
+}
+a{
+    font-size: 22px;
+}
