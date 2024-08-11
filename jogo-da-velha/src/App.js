@@ -1,13 +1,14 @@
 import React from 'react';
-import './Generic/Reset.css';
-import './Elements/Base.css'
+import Head from './Components/Head'
 import Painel from './Components/Painel';
+
 
 function App() {
   return (
-    
-    <Painel />
-   
+    <fragments>
+    <Head/>
+    <Painel/>
+    </fragments>
   );
 }
 
