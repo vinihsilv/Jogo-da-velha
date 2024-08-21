@@ -1,0 +1,5 @@
+.titulo{
+    height: 70px;
+    width: auto;
+    background-color: var(--color-tertiary);  
+}

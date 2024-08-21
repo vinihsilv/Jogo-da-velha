@@ -1,6 +1,6 @@
 import React from 'react';
-import Head from './Components/Head'
-import Painel from './Components/Painel';
+import Head from './Components/Header/Head';
+import Painel from './Components/Painel/Painel';
 
 
 function App() {

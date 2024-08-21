@@ -1,9 +1,13 @@
 import React from 'react';
 import './Title.css';
+import Logo from '../../Objects/Logo';
+import Sobre from '../../Objects/Sobre';
+
 function Head(){
     return( 
     <div className='titulo'>
-        <a href="#" className="sobre">SOBRE</a>
+        <Logo/>
+        <Sobre/>
     </div>
     )
 }
