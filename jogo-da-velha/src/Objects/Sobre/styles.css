@@ -5,4 +5,12 @@
     text-decoration: none;
     position:  absolute;   
     right: 5%;
+    top: 20px;
+}
+.sobre::after{
+    content: "≡";
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    
 }
