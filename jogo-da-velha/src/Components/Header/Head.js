@@ -6,6 +6,7 @@ import Sobre from '../../Objects/Sobre';
 function Head(){
     return( 
     <div className='titulo'>
+        
         <Logo/>
         <Sobre/>
     </div>

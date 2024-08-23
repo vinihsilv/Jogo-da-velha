@@ -1,0 +1,12 @@
+.card{
+    position: absolute;
+    width: 28em;
+    height: 28em;
+    border-radius: 5em;
+    background-color: var(--color-quartiary);
+    top: 10%;
+    bottom: 70%;
+    left: 10%;
+    right: 50%;
+    
+}

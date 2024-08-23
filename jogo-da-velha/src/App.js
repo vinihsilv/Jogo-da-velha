@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from './Components/Header/Head';
 import Painel from './Components/Painel/Painel';
+import Player from './Components/Player/index';
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <fragments>
     <Head/>
     <Painel/>
+    <Player/>
     </fragments>
   );
 }
