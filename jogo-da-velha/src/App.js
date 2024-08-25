@@ -1,24 +1,13 @@
 import React from 'react';
 import Head from './Components/Header/Head';
-import Painel from './Components/Painel/Painel';
-import Player from './Components/Player/index';
+import Hashtag from './Components/Hashtag';
 
 
 function App() {
   return (
     <fragments>
     <Head/>
-    <Painel>
-    <Player player='x'/>
-    <Player player='o'/>
-    <Player player='x'/>
-    <Player player='o'/>
-    <Player player='x'/>
-    <Player player='o'/>
-    <Player player='x'/>
-    <Player player='o'/>
-    <Player player='x'/>
-    </Painel>
+    <Hashtag/>
     </fragments>
   );
 }
