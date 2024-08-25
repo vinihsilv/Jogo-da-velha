@@ -8,8 +8,17 @@ function App() {
   return (
     <fragments>
     <Head/>
-    <Painel/>
-    <Player/>
+    <Painel>
+    <Player player='x'/>
+    <Player player='o'/>
+    <Player player='x'/>
+    <Player player='o'/>
+    <Player player='x'/>
+    <Player player='o'/>
+    <Player player='x'/>
+    <Player player='o'/>
+    <Player player='x'/>
+    </Painel>
     </fragments>
   );
 }

@@ -1,10 +1,18 @@
 import { Fragment } from "react";
-import imagem from '../../img/X.png';
+import playerx from '../../img/X.png';
+import playero from '../../img/Circle.png';
 import './styles.css';
-function Player(){
-    return(
+function Player(props){
+        let player = '';
+        if(props.player === 'x'){
+            player = playerx;
+        }else if (props.player === 'o'){
+            player = playero
+        }
+
+        return(
         <Fragment>
-            <button className="image" ><img src={imagem}></img></button>
+            <button className="image" ><img src={player}></img></button>
         </Fragment>
     );
 }

@@ -1,5 +1,6 @@
 .card{
     position: absolute;
+    display: flex;
     width: 28em;
     height: 28em;
     border-radius: 5em;

@@ -1,11 +1,11 @@
 import React from 'react';
-import Card from '../../Components/Card';
+
 import './Styles.css';
-function Painel(){
+function Painel(props){
     return(
         <div className="bloco">
-            <Card/>
+            {props.children}
         </div>
     )
 }
-export default Painel
+export default Painel;
