@@ -5,7 +5,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 3px;
     row-gap: 4px;
-    
+
 }
 .hashtag > .item {
     background-color: var(--color-primary);

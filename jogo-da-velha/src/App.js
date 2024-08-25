@@ -1,16 +1,12 @@
-import React from 'react';
-import Head from './Components/Header/Head';
-import Hashtag from './Components/Hashtag';
+import React, { Fragment } from "react";
+
+import Home from './Pages/Home';
 
 
 
 function App() {
   return (
-    <fragments>
-    <Head/>
-    <Hashtag/>
-   
-    </fragments>
+    <Home/>
   );
 }
 
