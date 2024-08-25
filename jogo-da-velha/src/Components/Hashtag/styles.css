@@ -11,5 +11,6 @@
     background-color: var(--color-primary);
     display: flex;
     justify-content: center;
+    border-radius: 2px;
     
 }

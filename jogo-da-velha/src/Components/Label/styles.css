@@ -1,0 +1,25 @@
+.label{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    padding-top: 50px;
+    cursor: pointer;
+
+}
+.box{
+    appearance: none;
+    border: 2px solid var(--color-zero);
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    border-radius: 1px;
+}
+.box:checked{
+    
+    background-color: #4CAF50; /* Cor de fundo quando marcado */
+    border: 2px solid #4CAF50; 
+}
