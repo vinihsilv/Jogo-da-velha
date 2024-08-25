@@ -1,18 +1,21 @@
 import React from 'react';
+import './styles.css';
 import Painel from '../../Components/Painel/Painel';
 import Player from '../../Components/Player';
 function Hashtag (){
     return(
         <Painel>
-            <Player player='x'/>
-            <Player player='o'/>
-            <Player player='x'/>
-            <Player player='o'/>
-            <Player player='x'/>
-            <Player player='o'/>
-            <Player player='x'/>
-            <Player player='o'/>
-            <Player player='x'/>
+            <ul className='hashtag'>
+                <li><Player player='x'/></li>
+                <li><Player player='o'/></li>
+                <li><Player player='x'/></li>
+                <li><Player player='o'/></li>
+                <li><Player player='x'/></li>
+                <li><Player player='o'/></li>
+                <li><Player player='x'/></li>
+                <li><Player player='o'/></li>
+                <li><Player player='x'/></li>
+            </ul>
         </Painel>
     );
 }

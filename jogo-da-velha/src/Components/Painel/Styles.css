@@ -2,7 +2,6 @@
 .bloco{
     background-color: var(--color-primary);
     display: inline;
-    text-align: center;
     left: 35%;
     top: 30%;
     right: 50%;

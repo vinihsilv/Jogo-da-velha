@@ -1,0 +1,12 @@
+.hashtag{
+    display: grid;
+    text-align: center;
+    height: 100%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    
+}
+.hashtag li {
+    border: 2px solid var(--color-zero);
+    border-radius: 5px;
+}
