@@ -6,15 +6,15 @@ function Hashtag (){
     return(
         <Painel>
             <ul className='hashtag'>
-                <li><Player player='x'/></li>
-                <li><Player player='o'/></li>
-                <li><Player player='x'/></li>
-                <li><Player player='o'/></li>
-                <li><Player player='x'/></li>
-                <li><Player player='o'/></li>
-                <li><Player player='x'/></li>
-                <li><Player player='o'/></li>
-                <li><Player player='x'/></li>
+                <li className='item'><Player player='x'/></li>
+                <li className='item'><Player player='o'/></li>
+                <li className='item'><Player player='x'/></li>
+                <li className='item'><Player player='o'/></li>
+                <li className='item'><Player player='x'/></li>
+                <li className='item'><Player player='o'/></li>
+                <li className='item'><Player player='x'/></li>
+                <li className='item'><Player player='o'/></li>
+                <li className='item'><Player player='x'/></li>
             </ul>
         </Painel>
     );

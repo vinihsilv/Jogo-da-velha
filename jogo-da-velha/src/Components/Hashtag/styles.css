@@ -1,12 +1,15 @@
 .hashtag{
     display: grid;
-    text-align: center;
     height: 100%;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-template-rows: 33.33% 33.33% 33.33%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 3px;
+    row-gap: 4px;
     
 }
-.hashtag li {
-    border: 2px solid var(--color-zero);
-    border-radius: 5px;
+.hashtag > .item {
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    
 }

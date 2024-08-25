@@ -1,7 +1,6 @@
 
 .bloco{
-    background-color: var(--color-primary);
-    display: inline;
+    background-color: var(--color-zero);
     left: 35%;
     top: 30%;
     right: 50%;
