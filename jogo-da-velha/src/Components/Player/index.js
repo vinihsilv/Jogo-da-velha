@@ -12,7 +12,7 @@ function Player(props){
 
         return(
         <Fragment>
-            <button className="image" ><img src={player}></img></button>
+            <button type="button"className="image" ><img src={player}></img></button>
         </Fragment>
     );
 }

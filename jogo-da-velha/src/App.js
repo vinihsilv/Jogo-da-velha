@@ -1,12 +1,11 @@
 import React, { Fragment } from "react";
-
-import Home from './Pages/Home';
+import AppRoutes from "./Routes";
 
 
 
 function App() {
   return (
-    <Home/>
+    <AppRoutes/>
   );
 }
 
