@@ -1,10 +1,11 @@
 import React from "react";
+import Head from "../../Components/Header/Head";
 
 function Perfil(){
     return(
-        <h1>
-            Perfil
-        </h1>
+        <Head>
+            
+        </Head>
     )
 }
 export default Perfil;
