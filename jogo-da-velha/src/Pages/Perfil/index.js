@@ -1,11 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Head from "../../Components/Header/Head";
+import './styles.css';
+
 
 function Perfil(){
     return(
-        <Head>
-            
-        </Head>
+       <Fragment>
+        <Head className='-dark'/>
+       </Fragment>
     )
 }
 export default Perfil;

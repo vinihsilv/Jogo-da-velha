@@ -1,12 +1,13 @@
 import React from 'react';
-import './Title.css';
 import Logo from '../../Objects/Logo';
 import Sobre from '../../Objects/Sobre';
+import './Title.css';
 
-function Head(){
+
+
+function Head({className = ""}){
     return( 
-    <div className='titulo'>
-        
+    <div className={`titulo ${className}`}> 
         <Logo/>
         <Sobre/>
     </div>

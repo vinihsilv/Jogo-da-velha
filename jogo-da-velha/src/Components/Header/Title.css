@@ -2,8 +2,12 @@
     display: flex;
     justify-content: space-between;
     height: 70px;
-    width: auto;
-    padding-left: 20px;
-    padding-right: 34px;
-    background-color: var(--color-tertiary);  
+   
+    background-color: var(--color-tertiary);
+   
+}
+
+.titulo.-dark{
+    
+    background-color: var(--color-negative);
 }

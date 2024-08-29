@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";  
-import imagem from '../../img/logo500.png';
 import './styles.css'
+import imagem from '../../img/logo500.png';
+
 function Logo (){
     return(
         <Fragment>

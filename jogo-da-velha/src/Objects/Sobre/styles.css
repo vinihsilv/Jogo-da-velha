@@ -1,17 +1,20 @@
 .sobre{
     color:black;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
     text-decoration: none;
     position:  absolute;   
     right: 5%;
-    top: 20px;
+    top: 23px;
 }
 .sobre::after{
     content: "≡";
-    font-size: 28px;
+    
     font-weight: bold;
     text-decoration: none;
+    padding-left: 2px;
+    top: 1px;
+    position: absolute;
     
     
     
@@ -20,9 +23,11 @@
     color:black;
     font-size: 24px;
     font-weight: bold;
+    font-size: 26px;
     text-decoration: none;
     position:  absolute;   
     right: 10%;
     top: 23px;
+    padding-right: 15px;
    
 }
