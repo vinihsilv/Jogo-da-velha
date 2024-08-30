@@ -1,0 +1,9 @@
+.contato{
+    display: flex;
+    position: relative;
+    align-items: space-around;
+    justify-content: center;
+    top:50%;
+    gap: 20px;
+    
+}

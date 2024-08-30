@@ -1,0 +1,18 @@
+.icon{
+    border-radius: 114.5px;
+    position: absolute;
+    width: 229px;
+    height: 229px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 44%;
+    top: 28%;
+    
+    
+} 
+
+.icon > img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    max-height: 100%;
+}

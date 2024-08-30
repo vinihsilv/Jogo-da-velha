@@ -1,3 +1,7 @@
-body{
+.perfil{
+    height: 100vh;
     background-color: var(--color-quinary);
+}
+.image{
+    position: absolute;
 }
