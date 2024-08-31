@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import playerx from '../../img/X.png';
 import playero from '../../img/Circle.png';
 import './styles.css';
+
 function Player(props){
         let player = '';
         if(props.player === 'x'){
@@ -12,8 +13,14 @@ function Player(props){
 
         return(
         <Fragment>
-            <button type="button"className="image" ><img src={player}></img></button>
+            <button cursor='pointer' onClick={ação}type="button"className="image" ><img src={player}></img></button>
         </Fragment>
+        
     );
+    function ação(){
+        alert("anda");
+    }
 }
+
+
 export default Player;
