@@ -7,9 +7,9 @@ import './styles.css';
 function Contatos(){
     return(
         <div className="contato">
-            <img src={githubIcon} alt='github'/>
-            <img src={instagramIcon} alt='instagram'/>
-            <img src={linkedlnIcon} alt='linkedln'/>
+            <a href='https://github.com/vinihsilv' target="_blank"><img src={githubIcon} /></a>
+            <a href='https://www.instagram.com/vini.hsilv/' target="_blank"><img src={instagramIcon} alt='instagram'/></a>
+            <a href='https://www.linkedin.com/in/vinicius-henrique-56369a245/' target="_blank"><img src={linkedlnIcon} alt='linkedln'/></a>
         </div>
     )
 }

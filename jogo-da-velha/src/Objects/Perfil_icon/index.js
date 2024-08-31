@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Icon from '../../img/perfil_icon.jpg';
+import Icon from '../../img/Perfil_icon.png';
 import './styles.css';
 
 function Perfil_icon(){
