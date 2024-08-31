@@ -1,21 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.css';
+import playerx from '../../img/X.png';
+import playero from '../../img/Circle.png';
 import Painel from '../../Components/Painel/Painel';
-import Player from '../../Components/Player';
 function Hashtag (){
+    const emptyBoard = Array(9).fill("");
+    const [board, setBoard] = useState(emptyBoard);
+    const handleCellClick = (index) => {
+        setBoard(board.map((item, itemIndex) => itemIndex == index ? <img src ={playero}/> : item));
+    }
     return(
         <Painel>
-            <ul className='hashtag'>
-                <li className='item'><Player player='x'/></li>
-                <li className='item'><Player player='o'/></li>
-                <li className='item'><Player player='x'/></li>
-                <li className='item'><Player player='o'/></li>
-                <li className='item'><Player player='x'/></li>
-                <li className='item'><Player player='o'/></li>
-                <li className='item'><Player player='x'/></li>
-                <li className='item'><Player player='o'/></li>
-                <li className='item'><Player player='x'/></li>
-            </ul>
+            <div className='board'>
+                {board.map((item, index) => (
+                    <div key={index} className={`cell $ {item}`} onClick={() => handleCellClick(index)}>
+                        {item}
+                    </div>
+            ))}
+            </div>
         </Painel>
     );
 }
