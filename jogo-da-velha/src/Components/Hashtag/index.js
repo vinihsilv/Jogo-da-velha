@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import './styles.css';
 import playerx from '../../img/X.png';
 import playero from '../../img/Circle.png';
@@ -22,8 +22,10 @@ function Hashtag (){
         };
     const handleCheckboxChange = (event) => {
         setShowHistory(event.target.checked);
-    };     
+    };
+    
     return(
+        <Fragment>
         <Painel>
             <div className='board'>
                 {board.map((item, index) => (
@@ -31,16 +33,20 @@ function Hashtag (){
                         {item && <img src={item === 'x' ? playerx : playero} alt={item} />}
                     </div>
             ))}
-            <label className="label"><input type="checkbox" className="box" onChange={handleCheckboxChange}></input>mostrar eventos</label>
-                {showHistory && (
-                    <div>
-                      {playerHistory.map((player, index) => (
-                        <label key={index}>Player {index + 1}: {String(player).toUpperCase()}</label>
-                      ))}
-                    </div>
-            )}
+            
+                
             </div>
         </Painel>
+        <label className="label"><input type="checkbox" className="box" onChange={handleCheckboxChange}></input>mostrar eventos</label>
+        {showHistory && (
+        <div>
+          {playerHistory.map((player, index) => (
+            <label className="historico" key={index}>Jogada {index + 1}: {String(player).toUpperCase()}</label>
+          ))}
+        </div>
+)}
+        </Fragment>
+        
     );
 }
 export default Hashtag;
