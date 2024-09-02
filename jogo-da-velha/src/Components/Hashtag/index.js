@@ -9,21 +9,20 @@ function Hashtag (){
     
     const [board, setBoard] = useState(emptyBoard);
     const [currentPlayer, setCurrentPlayer] = useState("x");
-    const [strings, setStrings] = useState(currentPlayer);
+    const [playerHistory, setPlayerHistory] = useState([]);
+    const [showHistory, setShowHistory] = useState(false);
 
     const handleCellClick = (index) => {
         if(board[index] !== ""){
             return null;
         }
-        
         setBoard(board.map((item, itemIndex) => itemIndex === index ? currentPlayer : item));
-
-         setCurrentPlayer(currentPlayer === "x" ? "o" : "x");
-         setStrings(currentPlayer);
-         console.log(strings)
-         
+        setPlayerHistory([...playerHistory, currentPlayer]);
+        setCurrentPlayer(currentPlayer === "x" ? "o" : "x");
         };
-       
+    const handleCheckboxChange = (event) => {
+        setShowHistory(event.target.checked);
+    };     
     return(
         <Painel>
             <div className='board'>
@@ -32,7 +31,14 @@ function Hashtag (){
                         {item && <img src={item === 'x' ? playerx : playero} alt={item} />}
                     </div>
             ))}
-            <label className="label"><input type="checkbox" className="box" ></input>mostrar eventos</label>
+            <label className="label"><input type="checkbox" className="box" onChange={handleCheckboxChange}></input>mostrar eventos</label>
+                {showHistory && (
+                    <div>
+                      {playerHistory.map((player, index) => (
+                        <label key={index}>Player {index + 1}: {String(player).toUpperCase()}</label>
+                      ))}
+                    </div>
+            )}
             </div>
         </Painel>
     );
